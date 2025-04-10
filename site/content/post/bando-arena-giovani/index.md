@@ -1,6 +1,6 @@
 ---
 title: Bando Arena Giovani
-date: 2025-04-09T10:08:57.649Z
+date: 2025-04-30T10:08:57.649Z
 Author: gabrieljones
 description: Arena Giovani è attualmente alla ricerca di personale volontario da
   inserire in vari uffici della pubblica amministrazione, nell’ambito di un
