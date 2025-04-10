@@ -1,6 +1,6 @@
 ---
 title: Recensione di La canzone di Achille di Madeline Miller
-date: 2025-04-11T18:12:00.000Z
+date: 2025-04-10T18:12:00.000Z
 Author: Gabriel Jones
 description: La canzone di Achille è un'opera delicata e potente allo stesso
   tempo, un racconto epico rivisitato attraverso la lente dell’amore e della
