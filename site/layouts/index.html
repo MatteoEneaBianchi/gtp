@@ -4,18 +4,15 @@
         <hr>
         {{ range .Site.RegularPages }}
             <div class="card">
-              <div class="card-title">
-                {{ .Page.Title }}
-              </div>
-              <div class="card-content">
-                {{ .Page.content }}
-              </div>
-              <a href="{{ .Page.link | default: '/shop' }}" class="card-button">Acquista Ora</a>
+                <div class="card-title">
+                    {{ .Title }}
+                </div>
+                <div class="card-content">
+                    {{ .Content }}
+                </div>
+                <a href="{{ .Permalink | default: '/shop' }}" class="card-button">Acquista Ora</a>
             </div>
         {{ end }}
     </div>
-{{ partial "rss.html" . }}
+    {{ partial "rss.html" . }}
 {{ end }}
-
-
-
