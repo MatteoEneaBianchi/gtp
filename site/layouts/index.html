@@ -5,10 +5,10 @@
         {{ range .Site.RegularPages }}
             <div class="card">
               <div class="card-title">
-                {{ page.title | default: "Prodotto Letterario" }}
+                {{ .Page.Title }}
               </div>
               <div class="card-content">
-                {{ page.content | default: "Scopri il nostro prodotto letterario, una selezione di libri rari e preziosi per gli appassionati di lettura. Ogni libro è scelto con cura per offrire una lettura unica e affascinante." }}
+                {{ .page.content }}
               </div>
               <a href="{{ page.link | default: '/shop' }}" class="card-button">Acquista Ora</a>
             </div>
