@@ -4,15 +4,19 @@
         <h1>Tutti i Post del Blog</h1>
         <hr>
         {{ range .Site.RegularPages }}
-        <div class="row mb-4">
-            <div class="col-sm">
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                <p>{{ .Params.description }}</p>
-                <a href="{{ .Permalink }}" class="btn btn-primary">Leggi di più</a>
-            <hr>
+            <div class="card">
+              <div class="card-title">
+                {{ page.title | default: "Prodotto Letterario" }}
+              </div>
+              <div class="card-content">
+                {{ page.content | default: "Scopri il nostro prodotto letterario, una selezione di libri rari e preziosi per gli appassionati di lettura. Ogni libro è scelto con cura per offrire una lettura unica e affascinante." }}
+              </div>
+              <a href="{{ page.link | default: '/shop' }}" class="card-button">Acquista Ora</a>
             </div>
-        </div>
         {{ end }}
     </div>
 {{ partial "rss.html" . }}
 {{ end }}
+
+
+
