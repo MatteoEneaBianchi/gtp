@@ -8,9 +8,10 @@
                     {{ .Title }}
                 </div>
                 <div class="card-content">
-                    {{ .Content }}
+                    <!-- Mostra solo la prima frase o un estratto -->
+                    {{ .Content | truncate 150 }} <!-- Puoi regolare il valore (150) per la lunghezza desiderata -->
                 </div>
-                <a href="{{ .Permalink }}" class="card-button">Acquista Ora</a>
+                <a href="{{ .Permalink | default: '/shop' }}" class="card-button">Acquista Ora</a>
             </div>
         {{ end }}
     </div>
