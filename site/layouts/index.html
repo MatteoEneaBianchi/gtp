@@ -10,7 +10,7 @@
               <div class="card-content">
                 {{ .page.content }}
               </div>
-              <a href="{{ page.link | default: '/shop' }}" class="card-button">Acquista Ora</a>
+              <a href="{{ .Page.link | default: '/shop' }}" class="card-button">Acquista Ora</a>
             </div>
         {{ end }}
     </div>
